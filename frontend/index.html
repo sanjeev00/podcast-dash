@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+<style>
+</style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 sidebar">
+                <div class="user-details d-flex">
+                    <div class="avatar align-self-start">NS</div>
+                    <div class="flex-grow-1 pl-2">
+                     <h6 class="user-name">Nick Schadov</h6>  
+                     <p>KuJI Podcast</p>
+                    </div>
+                    <div class="add-icon align-self-start" >+</div>
+                </div>
+                <div class="side-nav">
+                    <ul>
+                        <li>
+                            <img src="img/inbox.svg">    
+                            Inbox</li>
+                        <li>
+                            <img src="img/alerts.svg">   
+                            Alerts <span class="badge badge-danger">2</span></li>
+                        <li class="active">
+                            <img src="img/overview.svg">
+                            Overview</li>
+                    </ul>
+                    <h6>Podcasts</h6>
+                    <ul>
+                        <li><img src="img/episode.svg">
+                            Episode</li>
+                        <li><img src="img/media.svg">
+                             Media</li>
+                        <li>
+                           <img src="img/materials.svg">
+                            Materials</li>
+                        <li>
+                            <img src="img/people.svg">    
+                            Contacts</li>
+
+                    </ul>
+                    <h6>Analytics</h6>
+                    <ul>
+                        <li><img src="img/subscribers.svg">Subscribers <span class="badge badge-danger">34</span></li>
+                        <li><img src="img/channels.svg"> Channels</li>
+                        <li><img src="img/integrations.svg">Integrations</li>
+                        <li><img src="img/reports.svg" >Reports</li>
+                    </ul>
+                </div>
+                <div class="podcaster d-flex">
+                    <div class="avatar align-self-start"><img src="img/podcast-icon.svg"></div>
+                    <div class="flex-grow-1 pl-2">
+                     <h6 class="user-name">Podcaster</h6>  
+                     <p class="text-muted">ver. 0.234</p>
+                    </div>
+                    <div class="add-icon align-self-start" >..</div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="top-bar card d-flex flex-row">
+                                <div class="top-status-block ">
+                                    <h5 class="top-status-head">New Subscribers<h5>
+                                    <h2 class='top-status-count'>5,097</h2> 
+                                    <p class='top-status-progress growth'>+33.45%</p>      
+                                </div>
+                                <div class="top-status-block">
+                                    <h5 class="top-status-head">Streams<h5>
+                                    <h2 class='top-status-count'>47,403</h2> 
+                                    <p class='top-status-progress fall'>-112.45%</p>      
+                                </div>
+                                <div class="top-status-block">
+                                    <h5 class="top-status-head">Engagement-Rate<h5>
+                                    <h2 class='top-status-count'>25.81</h2> 
+                                    <p class='top-status-progress growth'>+62.52%</p>      
+                                </div>
+                                <div class="top-status-block last">
+                                    <h5 class="top-status-head">Avg. watch time<h5>
+                                    <h2 class='top-status-count'>5,097</h2> 
+                                    <p class='top-status-progress growth'>+4.46%</p>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="row">
+                        <div class="col-8 rest-container">
+                            <div class="card chart-box">
+                                <div class="chart-numbers">
+                                <h5>Audience</h5>    
+                                <h2>301,097</h2>
+                                <div><span class="growth">+58.31%</span> for 7 last days</div>
+                                </div>
+                                <div class="chart-cont" >
+                                <canvas id="bar-chart" width="550" ></canvas>
+                            </div>
+                            </div>
+                            <div class="card podcast-list">
+                                <div class="d-flex pl-3">
+                                   <p class="flex-grow-1 pod-head"> Popular Episode<p>
+                                    <p class="growth">See all</p>
+                                </div>
+                                <div class="podcast-item d-flex ">
+
+                                    <div class="align-self-start podcast-number">
+                                        1
+                                    </div>
+                                    <div class="podcast-details flex-grow-1">
+                                        <h5>Kuji Podcast 33:Live</h5>
+                                        <p>Guest:Nurlan Saburov</p>
+                                    </div>
+                                    <div class="podcast-count">
+                                        1,99m 
+                                        <span class="growth">Live</span>
+                                    </div>
+                                </div>
+                                <div class="podcast-item d-flex ">
+                                    <div class="align-self-start podcast-number">
+                                        2
+                                    </div>
+
+                                    <div class="podcast-details flex-grow-1">
+                                        <h5>Kuji Podcast 20:Live</h5>
+                                        <p>Guest:Nurlan Saburov</p>
+                                    </div>
+                                    <div class="podcast-count">
+                                        1,54m 
+                                        <span class="growth">Live</span>
+                                    </div>
+                                </div>
+                                <div class="podcast-item d-flex">
+                                    <div class="align-self-start podcast-number">
+                                        3
+                                    </div>
+                                    <div class="podcast-details flex-grow-1">
+                                        <h5>Kuji Podcast 24:Live</h5>
+                                        <p>Guest:Nurlan Saburov</p>
+                                    </div>
+                                    <div class="podcast-count">
+                                        1,04m 
+                                        <span class="growth">Live</span>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card audience">
+                                <div class="d-flex aud-header">
+                                    <p>Audience Satisfaction</p>
+                                </div>
+                                <div class="arc">
+                                    <svg
+                                    viewBox="0 0 100 50"
+                                  ><g
+                                    fill-opacity="0"
+                                    stroke-width="6"
+                                  ><path
+                                    d="M5 50a45 45 0 1 1 90 0"
+                                    stroke="#EBEDF8"
+                                  /><path
+                                    class="progress"
+                                    d="M5 50a45 45 0 1 1 90 0"
+                                    stroke="#05b077"
+                                    stroke-dasharray="142"
+                                    stroke-dashoffset="142"
+                                  /></g></svg>
+                                </div>
+                                <div class="audience-percent"><h2>76.7%</h2></div>
+                                <div class="d-flex mx-2 px-4 aud-footer">
+                                    <p>0%</p>
+                                    <p class="flex-grow-1 text-center">Based on likes/disklikes</p>
+                                    <p>100%</p>
+                                </div>
+                            </div>
+                            <div class="webminar card">
+                                <div class=d-flex>
+                                    <h6>Webminars</h6>
+                                </div>
+                                <h3>Learn how you can more then 20% each month</h3>
+                                <p>Join our webminar and learn how to increase more then 20% your monthly income</p>
+                                <div class="pt-5 pb-2">Learn more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"> </script>
+<script>
+var ctx = document.getElementById('bar-chart').getContext('2d');
+Chart.defaults.global.defaultFontFamily = "Segoe UI";
+Chart.defaults.global.defaultFontSize = 16;
+Chart.defaults.global.defaultFontWeight = 600;
+Chart.defaults.global.defaultFontColor = "rgb(213 213 213)";
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data:{ 
+       
+        labels: ['Dec 21', 'Dec 22', 'Dec 23', 'Dec 24', 'Dec 25', 'Dec 26','Dec 27'],
+        datasets: [{
+            maxBarThickness:20,
+            data: [275000, 283000, 285000, 289000, 293000, 295000, 299000],
+            backgroundColor: 'rgb(13, 177, 120)',
+            
+          
+        }]
+    },
+    options: {
+        legend:{
+            display:false
+        },
+        scales: {
+          
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false,
+                    stepSize:10000,
+                    callback: function(value, index, values) {
+                        return  Math.floor(value/1000) + "k";
+                    }
+                },
+                gridLines:{
+                    borderDash:[15,8],
+                    lineWidth:2,
+                    drawBorder: false,
+                }, 
+
+                borderDash:[5, 15, 25],
+                lineWidth:3,
+                
+            }],
+            xAxes:[{
+                gridLines:{
+                display:false,
+                
+                },             
+            }]
+        }
+    }
+});
+console.log(myChart)
+</script>
+</body>
+</html>
